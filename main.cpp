@@ -1,5 +1,4 @@
-#include <iostream>
-#include <cmath>
+#include <iostream>#include <iostream>
 #include <iomanip>
 
 using namespace std;
@@ -7,21 +6,22 @@ using namespace std;
 int main()
 {
 
-    double base, altura, area, perimetro, diagonal;
+      double largura, comprimento, metroQuadrado, area, preco;
 
-    cout << "Base do retangulo: ";
-    cin >> base;
-    cout << "Altura do retangulo: ";
-    cin >> altura;
+      cout << "Digite a largura do terreno: ";
+      cin >> largura;
+      cout << "Digite o comprimento do terreno: ";
+      cin >> comprimento;
+      cout << "Digite o valor do metro quadrado: ";
+      cin >> metroQuadrado;
 
-    area = base * altura;
-    perimetro = 2 * (base + altura);
-    diagonal = sqrt(base * base + altura * altura);
+       area = largura * comprimento;
+       preco = area * metroQuadrado;
 
-    cout << fixed << setprecision(4);
-    cout << "AREA = " << area << endl;
-    cout << "PERIMETRO = " << perimetro << endl;
-    cout << "DIAGONAL = " << diagonal;
+       cout << fixed << setprecision(2);
+       cout << "Area do terreno = " << area << endl;
+        cout << fixed << setprecision(2);
+       cout << "Preco do terreno = " << preco << endl;
 
 
     return 0;
